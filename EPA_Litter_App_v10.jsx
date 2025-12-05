@@ -204,7 +204,7 @@ const App = () => {
         <div className="flex items-center space-x-3">
           <div className="relative w-10 h-10">
              <img 
-               src="/Picture1.jpg" 
+               src="/icon-192.png" 
                alt="EPA" 
                className="w-10 h-10 rounded-full border-2 border-white bg-white object-contain absolute top-0 left-0 z-10"
                onError={(e) => { e.target.style.opacity = 0; }} 
@@ -609,7 +609,7 @@ const App = () => {
           <div className="flex flex-col items-center text-center">
             <div className="relative w-20 h-20 mb-4">
                <img 
-                  src="/Picture1.jpg" 
+                  src="/icon-192.png" 
                   alt="App Icon" 
                   className="w-20 h-20 rounded-2xl shadow-md bg-white object-contain absolute top-0 left-0 z-10"
                   onError={(e) => { e.target.style.opacity = 0; }}
