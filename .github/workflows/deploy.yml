@@ -25,22 +25,19 @@ jobs:
         with:
           node-version: "20"
       
-      # Step 1: Go into the folder and install
+      # Standard Install (Looks in root)
       - name: Install Dependencies
-        # REPLACE 'clean592-app' WITH YOUR ACTUAL FOLDER NAME
-        run: cd clean592-app && npm install
+        run: npm install
       
-      # Step 2: Go into the folder and build
+      # Standard Build (Looks in root)
       - name: Build App
-        # REPLACE 'clean592-app' WITH YOUR ACTUAL FOLDER NAME
-        run: cd clean592-app && npm run build
+        run: npm run build
       
-      # Step 3: Upload the result (which is now inside the folder)
+      # Standard Upload (Looks for 'dist' folder in root)
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # REPLACE 'clean592-app' WITH YOUR ACTUAL FOLDER NAME
-          path: ./clean592-app/dist
+          path: ./dist
 
   deploy:
     environment:
